@@ -1,0 +1,11 @@
+.inputContainer {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgray;
+}
+
+input {
+    height: 25px;
+    width: 100px;
+}
