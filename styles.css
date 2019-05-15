@@ -1,50 +1,92 @@
 .inputContainer {
-    display:flex;
-    justify-content: center;
-    align-items: center;
+    /* display:flex; */
+    /* justify-content: center; */
+    /* align-items: center; */
     padding: 15px;
-    background-color: antiquewhite;
+    background-color: rgb(226, 225, 225);
 }
 
+.row {
+    display: flex;
+
+}
+
+.col-3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    
+}
+
+.main {
+    display: flex;
+    justify-content: space-evenly;
+}
 
 input {
     height: 45px;
-    width: 200px;
-    border: aquamarine;
+    width: 150px;
     margin: .5em;
     font-size: 1em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.rowSide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.descInput {
+    height: 25px;
+    width: auto;
 }
 
 button {
     height: 50px;
     width: 150px;
     border-radius: .76em;
-    box-shadow: small navy;
+    box-shadow: 1px 1px 2px darkslategray;
     font-size: 1em;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: aquamarine;
-}
-
-/* .card {
-    border:solid 1px black;
-    height: 600px;
-    width: 600px;
-} */
-
-.col-4 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    outline: none;
 }
 
 .canvas {
-    border:solid 1px burlywood;
+    border:solid 1px blanchedalmond;
     height: 600px;
     width: 600px;
     margin: 20px;
-    background-color:blanchedalmond;
+    background-color:rgb(226, 225, 225);
     position: relative;
+}
+
+.sidePanel {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;    
+    background:  rgb(41, 184, 228);
+    border-radius: 1%;
+    height: 600px;
+    width: 300px;
+    margin: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: 1px 1px 2px darkslategray;
+    color: white;
+}
+
+h3 {
+    padding: 10px;
+    text-shadow: 1px 1px 2px darkslategray;
+    text-decoration: underline;
+    align-self: center;
+}
+
+h4 {
+    padding: 20px;
+    text-shadow: 1px 1px 2px darkslategray;
 }
 
 .shape {
@@ -68,11 +110,11 @@ button {
 #tri {
     height: 0;
     width: 0;
-    background: blue;
-    border-top: transparent;
+
+    /* border-top: hidden;
     border-right: 100px solid yellow;
     border-bottom: 100px solid yellow;
-    border-left: transparent;
+    border-left: hidden; */
     
 }
 
@@ -80,3 +122,4 @@ button {
     border-top: 2em solid transparent;
     border-left: 2em solid red;
 } */
+

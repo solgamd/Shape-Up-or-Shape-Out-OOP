@@ -82,6 +82,14 @@ class Triangle extends Shape {
     constructor (height) {
         super(height, height);
         this.div.attr('id', 'tri');
+        this.div.css({
+            'border-right-width': `${this.height}px`,
+            'border-bottom-width': `${this.height}px`,
+            'border-right-style': 'solid',
+            'border-bottom-style': 'solid',
+            'border-color': 'yellow'
+        })
+        console.log(this.div.css);
     }
 }
 

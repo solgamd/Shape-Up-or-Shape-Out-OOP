@@ -6,39 +6,110 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
     <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
     <div class="inputContainer container">
         <div class="row">
-            <div class="col-6">
+            <div class="col-3">
+                <div>
+                    <input type="text" placeholder="side length" class="sqInput">
+                </div>
+                <div>
+                    <button type="submit" class="squareBtn">Draw a Square</button>
+                </div>
             </div>
-            <div>
-                <input type="text" placeholder="side length" class="sqInput">
-                <button type="submit" class="squareBtn">Draw a Square</button>
+            <div class="col-3">
+                <div>
+                    <input type="text" placeholder="height" class="rectInputH">
+                </div>
+                <div>
+                    <input type="text" placeholder="width" class="rectInputW">
+                </div>
+                <div>
+                    <button type="submit" class="rectBtn">Draw a Rectangle</button>
+                </div>
             </div>
-            <div>
-                <input type="text" placeholder="height" class="rectInputH">
-                <input type="text" placeholder="width" class="rectInputW">
-                <button type="submit" class="rectBtn">Draw a Rectangle</button>
+            <div class="col-3">
+                <div>
+                    <input type="text" placeholder="radius" class="circleInput">
+                </div>
+                <div>
+                    <button type="submit" class="circleBtn">Draw a Circle</button>
+                </div>
             </div>
-            <div>
-                <input type="text" placeholder="radius" class="circleInput">
-                <button type="submit" class="circleBtn">Draw a Circle</button>
+            <div class="col-3">
+                <div>
+                    <input type="text" placeholder="height" class="triInput">
+                </div>
+                <div>
+                    <button type="submit" class="triBtn">Draw a Triangle</button>
+                </div>
             </div>
-            <div>
-                <input type="text" placeholder="height" class="triInput">
-                <button type="submit" class="triBtn">Draw a Triangle</button>
-            </div>
-
         </div>
     </div>
-    <div class="row">
+    <div class="row main">
         <div class="col-4">
-            <div class="card canvas" id="canvas">
+            <div class="canvas" id="canvas"></div>
+        </div>
+        <div class="col-4">
+            <div class="sidePanel">
+                <h3 class="sideText">Describe the Shape</h3>
+                <div class="rowSide">
+                    <div>
+                        Shape Name:
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Click a shape for info" class="descInput">
+                    </div>
+                </div>
+                <div class="rowSide">
+                    <div>
+                        Width:
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Click a shape for info" class="descInput">
+                    </div>
+                </div>
+                <div class="rowSide">
+                    <div>
+                        Height:
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Click a shape for info" class="descInput">
+                    </div>
+                </div>
+                <div class="rowSide">
+                    <div>
+                        Radius:
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Click a shape for info" class="descInput">
+                    </div>
+                </div>
+                <div class="rowSide">
+                    <div>
+                        Area:
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Click a shape for info" class="descInput">
+                    </div>
+                </div>
+                <div class="rowSide">
+                    <div>
+                        Perimeter:
+                    </div>
+                    <div>
+                        <input type="text" placeholder="Click a shape for info" class="descInput">
+                    </div>
+                </div>
 
             </div>
+
         </div>
     </div>
     <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
