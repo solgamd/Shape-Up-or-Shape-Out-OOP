@@ -12,24 +12,38 @@
 <body>
     <div class="inputContainer container">
         <div class="row">
-            <div class="card col-6">
-                <input type="text" placeholder="side length" class="square">
-                <button type="submit" class="square">Draw a Square</button>
+            <div class="col-6">
+            </div>
+            <div>
+                <input type="text" placeholder="side length" class="sqInput">
+                <button type="submit" class="squareBtn">Draw a Square</button>
+            </div>
+            <div>
+                <input type="text" placeholder="height" class="rectInputH">
+                <input type="text" placeholder="width" class="rectInputW">
+                <button type="submit" class="rectBtn">Draw a Rectangle</button>
+            </div>
+            <div>
+                <input type="text" placeholder="radius" class="circleInput">
+                <button type="submit" class="circleBtn">Draw a Circle</button>
+            </div>
+            <div>
+                <input type="text" placeholder="height" class="triInput">
+                <button type="submit" class="triBtn">Draw a Triangle</button>
+            </div>
 
-                <input type="text" placeholder="height" class="rectangle">
-                <input type="text" placeholder="width" class="rectangle">
-                <button type="submit" class="rectangle">Draw a Rectangle</button>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-4">
+            <div class="card canvas" id="canvas">
 
-                <input type="text" placeholder="radius" class="circle">
-                <button type="submit" class="circle">Draw a Circle</button>
-
-                <input type="text" placeholder="height" class="triangle">
-                <button type="submit" class="triangle">Draw a Triangle</button>
             </div>
         </div>
     </div>
-
+    <script src="https://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
     <script src="app.js"></script>
+
 </body>
 
 </html>
