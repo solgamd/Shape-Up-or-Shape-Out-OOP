@@ -95,11 +95,11 @@ h4 {
 }
 
 #square {
-    background-color: red;
+    background-color: indianred;
 }
 
 #rect {
-    background-color: green;
+    background-color: lightgreen;
 }
 
 #circle {
@@ -107,19 +107,5 @@ h4 {
     border-radius: 50%;
 }
 
-#tri {
-    height: 0;
-    width: 0;
 
-    /* border-top: hidden;
-    border-right: 100px solid yellow;
-    border-bottom: 100px solid yellow;
-    border-left: hidden; */
-    
-}
-
-/* #tri:after {
-    border-top: 2em solid transparent;
-    border-left: 2em solid red;
-} */
 
