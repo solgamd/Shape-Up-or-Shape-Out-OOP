@@ -85,8 +85,8 @@ class Rect extends Shape {
     describeRect() {
         this.div.click(() => {
         $('#descName').val('rectangle');
-        $('#descWidth').val(`${this.width}`);
-        $('#descHeight').val(`${this.height}`);
+        $('#descWidth').val(`${this.width} px`);
+        $('#descHeight').val(`${this.height} px`);
         $('#descRadius').val('It\'s a rectangle, silly!');
         $('#descArea').val(this.height * this.width + ' px');
         $('#descPeri').val((this.height * this.width) * 2 + ' px');
@@ -97,26 +97,26 @@ class Rect extends Shape {
 class Circle extends Shape {
     constructor (radius) {
         super(2 * radius, 2 * radius);
-        this.radius = radius;                  // Is this where this goes?
+        this.radius = radius;                  
         this.div.attr('id', 'circle');
         this.describeCircle();
 
     }
     describeCircle() {
         this.div.click(() => {
-        let radius = (this.height / 2);
+        let radiusX = (this.height / 4);
         $('#descName').val('circle');
-        $('#descWidth').val(this.width / 2);
-        $('#descHeight').val(this.height / 2);
-        $('#descRadius').val(this.height / 4);
-        $('#descArea').val((radius * 2 * Math.PI) + ' px');
-        console.log(radius);
-        $('#descPeri').val(2 * Math.PI * radius + ' px');
+        $('#descWidth').val(this.width / 2 + ' px');
+        $('#descHeight').val(this.height / 2 + ' px');
+        $('#descRadius').val(this.height / 4 + ' px');
+        $('#descArea').val(Math.PI * Math.pow(radiusX, 2) + ' px'); 
+        $('#descPeri').val((radiusX * 2 * Math.PI) + ' px');
         });
     }
-    
 }
-
+// When you make a new triangle you were passing in 2 * the input value
+// Then you super functioned up 2 * the constructed radius which was already multiplied by 2.
+// So your height / 2 was still double your original input value
 class Triangle extends Shape {
     constructor (height) {
         super(height, height);
@@ -128,15 +128,14 @@ class Triangle extends Shape {
         })
         this.describeTri();
     }
-
     describeTri() {
         this.div.click(() => {
         $('#descName').val('triangle');
-        $('#descWidth').val(`${this.height}`);
-        $('#descHeight').val(`${this.height}`);
+        $('#descWidth').val(`${this.height} px`);
+        $('#descHeight').val(`${this.height} px`);
         $('#descRadius').val('It\'s a triangle, silly!');
         $('#descArea').val(this.height * 0.5 * this.height + ' px');
-        $('#descPeri').val(2 * this.height + (Math.sqrt(2) * this.height) + ' px');
+        $('#descPeri').val((2 * this.height + Math.sqrt(2) * this.height) + ' px');
         });
     }
 }

@@ -1,7 +1,4 @@
 .inputContainer {
-    /* display:flex; */
-    /* justify-content: center; */
-    /* align-items: center; */
     padding: 15px;
     background-color: rgb(226, 225, 225);
 }
@@ -54,7 +51,7 @@ button {
 }
 
 .canvas {
-    border:solid 1px blanchedalmond;
+    border:solid 1px rgb(41, 184, 228);
     height: 600px;
     width: 600px;
     margin: 20px;
@@ -77,16 +74,20 @@ button {
     color: white;
 }
 
-h3 {
-    padding: 10px;
-    text-shadow: 1px 1px 2px darkslategray;
-    text-decoration: underline;
-    align-self: center;
+h2 {
+    font-size: 2em;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(33, 92, 164);
+    text-align: center;
+    font-weight: 800;
 }
 
 h4 {
-    padding: 20px;
-    text-shadow: 1px 1px 2px darkslategray;
+    padding: 10px;
+    text-shadow: none;
+    align-self: center;
+    color: rgb(33, 92, 164);
+    font-weight: 800;
 }
 
 .shape {
@@ -99,7 +100,7 @@ h4 {
 }
 
 #rect {
-    background-color: lightgreen;
+    background-color: limegreen;
 }
 
 #circle {
