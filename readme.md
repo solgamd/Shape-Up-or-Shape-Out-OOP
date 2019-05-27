@@ -2,6 +2,9 @@
 
 *Covalence*
 
+Description: A web app that automatically draws shapes onto a canvas using dimensions inputted by the user.
+
+----
 The purpose of this lab is to help solidify the OOP Class inheritance concepts you've learned from the lectures.
 
 - You will be building a webpage that will enable users to draw shapes of varying sizes on the screen.

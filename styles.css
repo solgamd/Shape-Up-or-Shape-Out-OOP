@@ -1,6 +1,8 @@
 .inputContainer {
     padding: 15px;
+    background: url('shapes-image.jpg');
     background-color: rgb(226, 225, 225);
+    background-size: auto;
 }
 
 .row {
@@ -10,20 +12,23 @@
 .col-3 {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
     align-items: center;
-    margin: auto;
 }
 
-.main {
+.col {
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 
 input {
     height: 45px;
     width: 150px;
     margin: .5em;
-    font-size: 1em;
+    font-size: 1.25em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -35,10 +40,11 @@ input {
 
 button {
     height: 50px;
-    width: 150px;
+    width: auto;
+    padding: 10px;
     border-radius: .76em;
     box-shadow: 1px 1px 2px darkslategray;
-    font-size: 1em;
+    font-size: 1.25em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: aquamarine;
     outline: none;
@@ -48,7 +54,9 @@ button {
     border:solid 1px rgb(41, 184, 228);
     height: 600px;
     width: 600px;
-    margin: 20px;
+    margin: 5px 5px 0px 100px;
+    background: url('annie-spratt-695478-unsplash.jpg');
+    background-size: 600px;
     background-color:rgb(226, 225, 225);
     position: relative;
 }
@@ -62,9 +70,9 @@ button {
     border-radius: 1%;
     height: 600px;
     width: 350px;
-    margin: 20px;
+    margin: 40px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    text-shadow: 1px 1px 2px darkslategray;
+    text-shadow: 1px 2px 2px darkslategray;
     color: white;
 }
 
@@ -73,12 +81,13 @@ button {
     width: 225px;
 }
 
-h2 {
-    font-size: 2em;
+h1 {
+    font-size: 3em;
     font-family: 'Courier New', Courier, monospace;
     color: rgb(33, 92, 164);
     text-align: center;
     font-weight: 800;
+    padding: 1em;
 }
 
 h4 {
@@ -88,6 +97,12 @@ h4 {
     color: rgb(33, 92, 164);
     font-family: 'Courier New', Courier, monospace;
     font-weight: 800;
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .shape {
