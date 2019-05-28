@@ -16,12 +16,12 @@
     align-items: center;
 }
 
-.col {
+.col-6 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: auto;
+    margin-left: 100px;
 }
 
 input {
@@ -50,11 +50,17 @@ button {
     outline: none;
 }
 
+.main {
+    display: flex;
+    justify-content: center;  
+    align-items: center;
+}
+
 .canvas {
+    align-self: flex-end;
     border:solid 1px rgb(41, 184, 228);
     height: 600px;
     width: 600px;
-    margin: 5px 5px 0px 100px;
     background: url('annie-spratt-695478-unsplash.jpg');
     background-size: 600px;
     background-color:rgb(226, 225, 225);
@@ -62,6 +68,7 @@ button {
 }
 
 .sidePanel {
+    align-self: flex-start;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -82,9 +89,10 @@ button {
 }
 
 h1 {
-    font-size: 3em;
+    font-size: 3.5em;
     font-family: 'Courier New', Courier, monospace;
-    color: rgb(33, 92, 164);
+    text-shadow: 1px 2px 2px darkslategray;
+    color: white;
     text-align: center;
     font-weight: 800;
     padding: 1em;
@@ -97,12 +105,6 @@ h4 {
     color: rgb(33, 92, 164);
     font-family: 'Courier New', Courier, monospace;
     font-weight: 800;
-}
-
-.main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 .shape {

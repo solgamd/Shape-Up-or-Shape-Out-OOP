@@ -14,7 +14,7 @@ $('.rectBtn').click(() => {
 
 $('.circleBtn').click(() => {
     let radius = $('.circleInput').val();
-    new Circle(2 * radius, 2 * radius);
+    new Circle(radius);
     $('.circleInput').val('');
 });
 
@@ -35,18 +35,9 @@ class Shape {
             height: this.height,
             width: this.width,
         });
-        this.draw();
         this.remove();
     }
-    draw() {
-        let newX = shapeSpot(this.width);
-        let newY = shapeSpot(this.height);
-        this.div.css({
-            top: newY,
-            left: newX,
-        })
-        $('#canvas').append(this.div);
-    }
+
     remove() {
         this.div.dblclick(() => {
             this.div.remove();
@@ -65,7 +56,23 @@ class Square extends Shape {
         super(side, side);
         this.div.attr('id', 'square');
         this.describeSq();
+        this.draw();
     }
+
+    draw() {
+        if (this.height > 600) {
+            alert('Side length needs to be 600px or LESS to fit on the canvas!');
+        } else {
+            let newX = shapeSpot(this.width);
+            let newY = shapeSpot(this.height);
+            this.div.css({
+                top: newY,
+                left: newX,
+            })
+            $('#canvas').append(this.div);
+        }
+    }
+
     describeSq() {
         this.div.click(() => {
             $('#descName').val('square');
@@ -83,7 +90,23 @@ class Rect extends Shape {
         super(height, width);
         this.div.attr('id', 'rect');
         this.describeRect();
+        this.draw();
     }
+
+    draw() {
+        if (this.height > 600 || this.width > 600) {
+            alert('Height and width need to be 600px or LESS to fit on the canvas!');
+        } else {
+            let newX = shapeSpot(this.width);
+            let newY = shapeSpot(this.height);
+            this.div.css({
+                top: newY,
+                left: newX,
+            })
+            $('#canvas').append(this.div);
+        }
+    }
+
     describeRect() {
         this.div.click(() => {
             $('#descName').val('rectangle');
@@ -102,14 +125,30 @@ class Circle extends Shape {
         this.radius = radius;
         this.div.attr('id', 'circle');
         this.describeCircle();
+        this.draw();
     }
+
+    draw() {
+        if (this.radius > 300) {
+            alert('Radius needs to be 300px or LESS to fit on the canvas!');
+        } else {
+            let newX = shapeSpot(this.width);
+            let newY = shapeSpot(this.height);
+            this.div.css({
+                top: newY,
+                left: newX,
+            })
+            $('#canvas').append(this.div);
+        }
+    }
+
     describeCircle() {
         this.div.click(() => {
-            let radiusX = (this.height / 4);
+            let radiusX = (this.height / 2);
             $('#descName').val('circle');
             $('#descWidth').val(this.width / 2 + ' px');
             $('#descHeight').val(this.height / 2 + ' px');
-            $('#descRadius').val(this.height / 4 + ' px');
+            $('#descRadius').val(radiusX / 2 + ' px');
             $('#descArea').val(Math.PI * Math.pow(radiusX, 2) + ' px');
             $('#descPeri').val((radiusX * 2 * Math.PI) + ' px');
         });
@@ -126,7 +165,23 @@ class Triangle extends Shape {
             borderRight: `${this.height}px solid transparent`,
         })
         this.describeTri();
+        this.draw();
     }
+
+    draw() {
+        if (this.height > 600) {
+            alert('Radius needs to be 600px or LESS to fit on the canvas!');
+        } else {
+            let newX = shapeSpot(this.width);
+            let newY = shapeSpot(this.height);
+            this.div.css({
+                top: newY,
+                left: newX,
+            })
+            $('#canvas').append(this.div);
+        }
+    }
+
     describeTri() {
         this.div.click(() => {
             $('#descName').val('triangle');
