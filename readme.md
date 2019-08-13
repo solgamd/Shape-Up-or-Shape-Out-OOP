@@ -29,12 +29,12 @@ The purpose of this lab is to help solidify the OOP Class inheritance concepts y
 - Each of the insert buttons above should create a new instance of that particular shape, which should draw itself on the screen with the specified size and placed in a random location (object details are below)
 - Create a 600px by 600px div with the background color of your choosing. All the shapes you insert will be drawn within this div
 - Show a sidepanel beside this shape canvas. It should display the following information for a clicked shape:
-- Shape Name:
-- Width:
-- Height:
-- Radius:
-- Area:
-- Perimeter:
+--Shape Name
+--Width
+--Height
+--Radius
+--Area
+--Perimeter
 
 *JavaScript Objectives*
 - You must use OOP. Specifically, you must use the classes defined below and properly use inheritance
