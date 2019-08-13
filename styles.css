@@ -2,7 +2,7 @@
     padding: 15px;
     background: url('shapes-image.jpg');
     background-color: rgb(226, 225, 225);
-    background-size: auto;
+    background-size: 100%;
 }
 
 .row {
@@ -89,13 +89,12 @@ button {
 }
 
 h1 {
-    font-size: 3.5em;
+    font-size: 4em;
     font-family: 'Courier New', Courier, monospace;
     text-shadow: 1px 2px 2px darkslategray;
     color: white;
     text-align: center;
     font-weight: 800;
-    padding: 1em;
 }
 
 h4 {
