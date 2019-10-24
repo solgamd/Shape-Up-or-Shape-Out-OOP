@@ -1,8 +1,9 @@
 **Shape Up Or Shape Out**
 
-*Covalence*
+A web app that automatically draws shapes onto a canvas using dimensions inputted by the user.
 
-Description: A web app that automatically draws shapes onto a canvas using dimensions inputted by the user.
+
+Created as part of the *Covalence* curriculum.
 
 ----
 The purpose of this lab is to help solidify the OOP Class inheritance concepts you've learned from the lectures.
@@ -77,3 +78,10 @@ Class- Square
 - You may find this guide helpful for drawing shapes with CSS (For triangle, use Top-Left, Top-Right, - Bottom-Left, or Bottom-Right)
 - Triangle area: 0.5 * base * height
 - Triangle perimeter (right isoceles): 2 * height + (square root of 2) * height
+
+
+----------------
+
+Sources: 
+- Background Imge Photo by Scott Webb from Pexels
+- Canvas Background Photo by Annie Spratt on Unsplash

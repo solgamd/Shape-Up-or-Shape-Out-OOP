@@ -1,35 +1,30 @@
-.inputContainer {
-    padding: 15px;
-    background: url('shapes-image.jpg');
-    background-color: rgb(226, 225, 225, 0.5);
-    background-size: 100%;
-    
+body {
+     background: url('shapes-image4.jpg');
+     background-size: cover;
 }
 
 .row {
     display: flex;
 }
 
-.col-3 {
+.inputsRow {
+    justify-content: space-around;
+    margin: 2px;
+    flex-wrap: wrap
+}
+
+.top-input {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
 }
 
-.col-6 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left: 100px;
-}
-
 input {
-    height: 45px;
-    width: 150px;
+    height: 30px;
+    width: 139px;
     margin: .5em;
-    font-size: 1.25em;
+    font-size: 1em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
@@ -40,45 +35,55 @@ input {
 }
 
 button {
-    height: 50px;
-    width: auto;
-    padding: 10px;
-    border-radius: .76em;
+    height: 30px;
+    width: 140px;
+    padding: 4px;
+    border-radius: .20em;
     box-shadow: 1px 1px 2px darkslategray;
-    font-size: 1.25em;
+    font-size: 1em;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     background-color: aquamarine;
     outline: none;
 }
 
 .main {
+    margin-top: 1em;
+    margin-bottom: 2em;
     display: flex;
     justify-content: center;  
+    align-items: flex-start;
+}
+
+.col {
+    display: flex;
+    flex-direction: column; 
+    justify-content: flex-start; 
     align-items: center;
 }
 
 .canvas {
-    align-self: flex-end;
-    border:solid 1px rgb(41, 184, 228);
+    margin-left: 100px;
+    align-self: flex-start;
+    border: solid 1px rgb(41, 184, 228);
+    border-radius: .25em;
     height: 600px;
     width: 600px;
-    background: url('annie-spratt-695478-unsplash.jpg');
-    background-size: 600px;
+    background: url('canvas-image1.jpg');
+    background-size: cover;
     background-color:rgb(226, 225, 225);
     position: relative;
+    margin-bottom: 2em;
 }
 
 .sidePanel {
-    align-self: flex-start;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     align-items: flex-end;    
     background:  rgb(41, 184, 228);
     border-radius: 1%;
-    height: 600px;
+    height: auto;
     width: 350px;
-    margin: 40px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     text-shadow: 1px 2px 2px darkslategray;
     color: white;
@@ -87,6 +92,11 @@ button {
 .descInput {
     height: 25px;
     width: 225px;
+}
+
+.clearBtn {
+    align-self: center;
+    margin: 2em;
 }
 
 h1 {
@@ -102,7 +112,8 @@ h4 {
     padding: 10px;
     text-shadow: none;
     align-self: center;
-    color: rgb(33, 92, 164);
+    color: white;
+    text-shadow: 1px 2px 1px darkslategray;
     font-family: 'Courier New', Courier, monospace;
     font-weight: 800;
 }

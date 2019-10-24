@@ -24,6 +24,10 @@ $('.triBtn').click(() => {
     $('.triInput').val('');
 });
 
+$('.clearBtn').click(() => {
+    $('#canvas').empty();
+})
+
 const shapeSpot = (value) => Math.floor(Math.random() * (600 - value));
 
 class Shape {
