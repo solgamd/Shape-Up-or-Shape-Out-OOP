@@ -1,5 +1,6 @@
 body {
      background: url('shapes-image4.jpg');
+     background-blend-mode: lighten;     
      background-size: cover;
 }
 
