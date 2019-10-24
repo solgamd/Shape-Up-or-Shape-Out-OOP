@@ -1,8 +1,9 @@
 .inputContainer {
     padding: 15px;
     background: url('shapes-image.jpg');
-    background-color: rgb(226, 225, 225);
+    background-color: rgb(226, 225, 225, 0.5);
     background-size: 100%;
+    
 }
 
 .row {
