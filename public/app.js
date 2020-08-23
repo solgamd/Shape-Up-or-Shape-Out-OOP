@@ -6,7 +6,7 @@ $('.squareBtn').click(() => {
 
 $('.rectBtn').click(() => {
     let height = $('.rectInputH').val();
-    let width = $('.rectInputW').val()
+    let width = $('.rectInputW').val();
     new Rect(height, width);
     $('.rectInputH').val('');
     $('.rectInputW').val('');
@@ -26,7 +26,7 @@ $('.triBtn').click(() => {
 
 $('.clearBtn').click(() => {
     $('#canvas').empty();
-})
+});
 
 const shapeSpot = (value) => Math.floor(Math.random() * (600 - value));
 
@@ -53,7 +53,7 @@ class Shape {
             $('#descPeri').val('');
         });
     }
-};
+}
 
 class Square extends Shape {
     constructor(side) {
@@ -72,7 +72,7 @@ class Square extends Shape {
             this.div.css({
                 top: newY,
                 left: newX,
-            })
+            });
             $('#canvas').append(this.div);
         }
     }
@@ -87,7 +87,7 @@ class Square extends Shape {
             $('#descPeri').val(this.height * 4 + ' px');
         });
     }
-};
+}
 
 class Rect extends Shape {
     constructor(height, width) {
@@ -106,7 +106,7 @@ class Rect extends Shape {
             this.div.css({
                 top: newY,
                 left: newX,
-            })
+            });
             $('#canvas').append(this.div);
         }
     }
@@ -141,7 +141,7 @@ class Circle extends Shape {
             this.div.css({
                 top: newY,
                 left: newX,
-            })
+            });
             $('#canvas').append(this.div);
         }
     }
@@ -167,7 +167,7 @@ class Triangle extends Shape {
             width: 0,
             borderBottom: `${this.height}px solid yellow`,
             borderRight: `${this.height}px solid transparent`,
-        })
+        });
         this.describeTri();
         this.draw();
     }
@@ -181,7 +181,7 @@ class Triangle extends Shape {
             this.div.css({
                 top: newY,
                 left: newX,
-            })
+            });
             $('#canvas').append(this.div);
         }
     }
